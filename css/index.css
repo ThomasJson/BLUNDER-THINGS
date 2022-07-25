@@ -55,7 +55,7 @@ body {
 
 header {
     width: 100%;
-    height: 45px;
+    height: 3.5em;
     justify-content: space-between;
     align-items: center;
 }
@@ -224,18 +224,19 @@ form p {
 
 #section-main {
     width: 100%;
-    height: 100%;
+    height: 30em;
     margin-top: 20px;
     justify-content: space-evenly;
 }
 
-/* ////////////////////////////////////////////////// SETTINGS SECTION ////////////////////////////////////////////////// */
-
 .aside-section {
     width: 25%;
-    height: 81%;
+    height: 25em;
     border: 1px solid grey;
 }
+
+/* ////////////////////////////////////////////////// SETTINGS SECTION ////////////////////////////////////////////////// */
+
 #settings-container {
     padding: 20px;
     display: flex;
@@ -256,11 +257,13 @@ form p {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 43%;
-    height: 85%;
 }
 .parent div {
     justify-content: center;
     align-items: center;
+}
+.parent i {
+    font-size: 2.4em;
 }
 
 .div1 { grid-area: 8 / 2 / 9 / 3; }
