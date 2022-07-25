@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>BLUNDER THINGS</title>
+</head>
+<body>
+    <div id="bloc-page">
+        <header class="flex background-color">
+            <div id="titre-nav" class="flex">
+                <div id="logo-titre" class="color2">BLUNDER THINGS</div>
+                <nav>
+                    <ul class="flex"> 
+                        <li><a href="#" class="color2">Ouvertures</a></li>
+                        <li><a href="#" class="color2">Paramètres</a></li>
+                        <li id="li-1" class="hidden-li"><a href="#" class="color2">Mes parties récentes</a></li>
+                        <li id="li-2" class="hidden-li"><a href="#" class="color2">Mon compte</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="login" class="flex">
+                <div id="avatar-profile" class="flex color2 hidden-profile">
+                    <p id="profile-name"></p>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="sign-up" class="flex color2">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <p>Connexion</p>
+                </div>
+                <div id="sign-in" class="flex color2">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <p>S'inscrire</p>
+                </div>
+            </div>
+        </header>
+        <!-- ///////////////// HIDDEN FORM ////////////////////// -->
+        <div class="flex">
+            <div id="login-form" class="hidden-form background-color">
+                <form>
+                
+                    <div class="container">
+                        <label class="color2" for="uName-login">Username</label>
+                        <input id="uName-login" type="text" placeholder="Enter Username" name="uname" spellcheck="false" required>
+                  
+                        <label class="color2" for="pass-login">Password</label>
+                        <input id="pass-login" type="password" placeholder="Enter Password" name="password" spellcheck="false" required>        
+
+                        <button id="login-btn" type="submit">Login</button>
+
+                        <div id="connectionSuccess" class="d-none">
+                            <button id="accederSite-btn">Accéder au site</button>
+                        </div>
+
+                    </div>
+                
+                </form>
+            </div>
+            <div id="register-form" class="hidden-form background-color">
+                <form>
+                
+                    <div class="container">
+                        <label class="color2" for="uName-input">Username</label>
+                        <input id="uName-input" type="text" placeholder="Enter Username" name="uname" spellcheck="false" required>
+                  
+                        <label class="color2" for="password-input">Password</label>
+                        <input id="password-input" type="password" placeholder="Enter Password" name="password" spellcheck="false" required>        
+                        
+                        <label class="color2" for="mail-input">Email</label>
+                        <input id="mail-input" type="email" placeholder="Adress@gmail.com" name="email" spellcheck="false" required>
+
+                        <button id="register-btn" type="submit">S'incrire</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+
+        <main id="section-main" class="flex">
+
+            <!-- ///////////////////////// SECTION SETTINGS //////////////// -->
+
+            <section class="aside-section">
+                <div id="settings-container">
+                    <button>Nouvelle Partie</button>
+                    <button>Cadence</button>
+                    <div class="flex">
+                        <button>Avant</button>
+                        <button>Après</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ///////////////////////// CHESSBOARD ///////////////////// -->
+        
+            <div class="parent">
+
+                <div class="div1 chess-clr1 flex"><i class="fa-regular fa-chess-rook fa-2x"></i></div>
+                <div class="div2 chess-clr2 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div3 chess-clr1 flex"></div>
+                <div class="div4 chess-clr2 flex"></div>
+                <div class="div5 chess-clr1 flex"></div>
+                <div class="div6 chess-clr2 flex"></div>
+                <div class="div7 chess-clr1 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div8 chess-clr2 flex"><i class="fa-solid fa-chess-rook fa-2x"></i></div>
+                <div class="div9 chess-clr2 flex"><i class="fa-regular fa-chess-knight fa-2x"></i></div>
+                <div class="div10 chess-clr1 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div11 chess-clr2 flex"></div>
+                <div class="div12 chess-clr1 flex"></div>
+                <div class="div13 chess-clr2 flex"></div>
+                <div class="div14 chess-clr1 flex"></div>
+                <div class="div15 chess-clr2 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div16 chess-clr1 flex"><i class="fa-solid fa-chess-knight fa-2x"></i></div>
+                <div class="div17 chess-clr1 flex"><i class="fa-regular fa-chess-bishop fa-2x"></i></div>
+                <div class="div18 chess-clr2 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div19 chess-clr1 flex"></div>
+                <div class="div20 chess-clr2 flex"></div>
+                <div class="div21 chess-clr1 flex"></div>
+                <div class="div22 chess-clr2 flex"></div>
+                <div class="div23 chess-clr1 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div24 chess-clr2 flex"><i class="fa-solid fa-chess-bishop fa-2x"></i></div>
+                <div class="div25 chess-clr2 flex"><i class="fa-regular fa-chess-queen fa-2x"></i></div>
+                <div class="div26 chess-clr1 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div27 chess-clr2 flex"></div>
+                <div class="div28 chess-clr1 flex"></div>
+                <div class="div29 chess-clr2 flex"></div>
+                <div class="div30 chess-clr1 flex"></div>
+                <div class="div31 chess-clr2 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div32 chess-clr1 flex"><i class="fa-solid fa-chess-queen fa-2x"></i></div>
+                <div class="div33 chess-clr1 flex"><i class="fa-regular fa-chess-king fa-2x"></i></div>
+                <div class="div34 chess-clr2 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div35 chess-clr1 flex"></div>
+                <div class="div36 chess-clr2 flex"></div>
+                <div class="div37 chess-clr1 flex"></div>
+                <div class="div38 chess-clr2 flex"></div>
+                <div class="div39 chess-clr1 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div40 chess-clr2 flex"><i class="fa-solid fa-chess-king fa-2x"></i></div>
+                <div class="div41 chess-clr2 flex"><i class="fa-regular fa-chess-bishop fa-2x"></i></div>
+                <div class="div42 chess-clr1 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div43 chess-clr2 flex"></div>
+                <div class="div44 chess-clr1 flex"></div>
+                <div class="div45 chess-clr2 flex"></div>
+                <div class="div46 chess-clr1 flex"></div>
+                <div class="div47 chess-clr2 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div48 chess-clr1 flex"><i class="fa-solid fa-chess-bishop fa-2x"></i></div>
+                <div class="div49 chess-clr1 flex"><i class="fa-regular fa-chess-knight fa-2x"></i></div>
+                <div class="div50 chess-clr2 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div51 chess-clr1 flex"></div>
+                <div class="div52 chess-clr2 flex"></div>
+                <div class="div53 chess-clr1 flex"></div>
+                <div class="div54 chess-clr2 flex"></div>
+                <div class="div55 chess-clr1 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div56 chess-clr2 flex"><i class="fa-solid fa-chess-knight fa-2x"></i></div>
+                <div class="div57 chess-clr2 flex"><i class="fa-regular fa-chess-rook fa-2x"></i></div>
+                <div class="div58 chess-clr1 flex"><i class="fa-regular fa-chess-pawn fa-2x"></i></div>
+                <div class="div59 chess-clr2 flex"></div>
+                <div class="div60 chess-clr1 flex"></div>
+                <div class="div61 chess-clr2 flex"></div>
+                <div class="div62 chess-clr1 flex"></div>
+                <div class="div63 chess-clr2 flex"><i class="fa-solid fa-chess-pawn fa-2x"></i></div>
+                <div class="div64 chess-clr1 flex"><i class="fa-solid fa-chess-rook fa-2x"></i></div>
+                <div class="div65 flex cursor-dft">1</div>
+                <div class="div66 flex cursor-dft">2</div>
+                <div class="div67 flex cursor-dft">3</div>
+                <div class="div68 flex cursor-dft">4</div>
+                <div class="div69 flex cursor-dft">5</div>
+                <div class="div70 flex cursor-dft">6</div>
+                <div class="div71 flex cursor-dft">7</div>
+                <div class="div72 flex cursor-dft">8</div>
+                <div class="div73 flex cursor-dft">a</div>
+                <div class="div74 flex cursor-dft">b</div>
+                <div class="div75 flex cursor-dft">c</div>
+                <div class="div76 flex cursor-dft">d</div>
+                <div class="div77 flex cursor-dft">e</div>
+                <div class="div78 flex cursor-dft">f</div>
+                <div class="div79 flex cursor-dft">g</div>
+                <div class="div80 flex cursor-dft">h</div>
+
+            </div>
+
+            <!-- /////////////////// FEUILLE DE MATCH ////////////////// -->
+
+            <section id="feuille-de-match" class="aside-section">
+
+                <div id="opening-name">
+                    <p>Opening name : ...</p>
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="nB-coups">1</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="nB-coups">2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="nB-coups">3</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="nB-coups">4</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="nB-coups">5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </main>
+        <footer class="background-color">
+            <p>Copyright</p>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
