@@ -19,6 +19,12 @@ body {
 #bloc-page {
     height: 100vh;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
 
 /* ////////////////////////////////////////////////// GLOBAL-CLASS ////////////////////////////////////////////////// */
 
@@ -54,6 +60,9 @@ body {
     font-size: 0.7em;
     color: grey;
 }
+.hidden {
+    visibility: hidden;
+}
 
 /* ////////////////////////////////////////////////// TITRE-NAV ////////////////////////////////////////////////// */
 
@@ -67,11 +76,14 @@ header {
     margin-right: 15px;
     margin-left: 15px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; 
+}
+#logo-titre a {
+    color: #fff8eff4;
     font-family: "Raleway-LightItalic";
 }
-#logo-titre:hover {
-    cursor: default;
+#logo-titre a:hover {
+    color: white;
 }
 header ul { 
     margin: 0px;
@@ -91,12 +103,6 @@ header li {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
-}
-a {
-    text-decoration: none;
-}
-a:hover {
-    color: white;
 }
 
 /* ////////////////////////////////////////////////// LOGIN ////////////////////////////////////////////////// */
@@ -411,4 +417,40 @@ footer {
 footer p {
     margin: 0px;
     text-align: center;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// OPENING PAGE //////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#section-ouvertures {
+    display: flex;
+    flex-direction: column;
+}
+.opening-container {
+    padding: 10px;
+    margin: 15px 15px 0px 15px;
+    border: 1px solid black;
+}
+.theory-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.theory-container h3 {
+    margin: 0px 15px 0px 0px;
+}
+.chess-play {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+.mini-chess {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 10px;
+    border: 1px solid black;
 }
