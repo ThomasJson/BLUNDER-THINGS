@@ -1,14 +1,6 @@
-/* * {
-    font-family: 'fashinsm';
-} */
-/* @font-face {
-    font-family: 'Fashinsm';
-    src: url('../fonts/fashinsm.ttf');
-} */
-/* input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
-} */
-
+* {
+    box-sizing: border-box;
+}
 body {
     margin: auto;
     height: 100vh;
@@ -230,8 +222,8 @@ form p {
 }
 .aside-section {
     width: 25%;
-    height: 25em;
-    border: 1px solid grey;
+    height: calc(100% - 20px);
+    border: 0.2px solid grey;
 }
 
 /* ////////////////////////////////////////////////// SETTINGS SECTION ////////////////////////////////////////////////// */
