@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <title>BLUNDER THINGS</title>
+</head>
+<body>
+    <header class="flex background-color">
+        <div id="titre-nav" class="flex">
+            <div id="logo-titre" class="color2"><a href="./index.html">BLUNDER THINGS</a></div>
+            <nav>
+                <ul class="flex"> 
+                    <li><a href="./ouvertures.html" class="color2">Ouvertures</a></li>
+                    <li><a href="#" class="color2">Boutique</a></li>
+                    <li><a href="#" class="color2">Trophées</a></li>
+                    <li id="li-1" class="hidden-li"><a href="#" class="color2">Mes parties récentes</a></li>
+                    <li id="li-2" class="hidden-li"><a href="#" class="color2">(Solde)</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="login" class="flex">
+            <div id="avatar-profile" class="flex color2 hidden-profile">
+                <p id="profile-name"></p>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div id="sign-up" class="flex color2">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <p>Connexion</p>
+            </div>
+            <div id="sign-in" class="flex color2">
+                <i class="fa-solid fa-user-plus"></i>
+                <p>S'inscrire</p>
+            </div>
+        </div>
+    </header>
+    <!-- ///////////////// HIDDEN FORM ////////////////////// -->
+    <div class="flex">
+        <div id="login-form" class="hidden-form background-color">
+            <form>
+            
+                <div class="container">
+                    <label class="color2" for="uName-login">Username</label>
+                    <input id="uName-login" type="text" placeholder="Enter Username" name="uname" spellcheck="false" required>
+              
+                    <label class="color2" for="pass-login">Password</label>
+                    <input id="pass-login" type="password" placeholder="Enter Password" name="password" spellcheck="false" required>        
+
+                    <button id="login-btn" type="submit">Login</button>
+
+                    <div id="connectionSuccess" class="d-none">
+                        <button id="accederSite-btn">Accéder au site</button>
+                    </div>
+
+                </div>
+            
+            </form>
+        </div>
+        <div id="register-form" class="hidden-form background-color">
+            <form>
+            
+                <div class="container">
+                    <label class="color2" for="uName-input">Username</label>
+                    <input id="uName-input" type="text" placeholder="Enter Username" name="uname" spellcheck="false" required>
+              
+                    <label class="color2" for="password-input">Password</label>
+                    <input id="password-input" type="password" placeholder="Enter Password" name="password" spellcheck="false" required>        
+                    
+                    <label class="color2" for="mail-input">Email</label>
+                    <input id="mail-input" type="email" placeholder="Adress@gmail.com" name="email" spellcheck="false" required>
+
+                    <button id="register-btn" type="submit">S'incrire</button>
+                </div>
+            
+            </form>
+        </div> 
+    </div>
+
+    <section id="section-ouvertures">
+
+        <div class="opening-container flex">
+
+            <div class="theory-container">
+                <div class="ouvertures-variations flex">
+                    <h3>La Caro-Kann</h3>
+                    <button>Variantes</button>
+                    <button class="hidden">Classique</button>
+                    <button class="hidden">Avance</button>
+                    <button class="hidden">Je sais plus</button>
+                </div>
+                <p>Blabla La caro-Kann c'est trop bien</p>
+            </div>
+
+            <div class="chess-play">
+                <div class="mini-chess">
+
+                </div>
+                <button>Play</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
