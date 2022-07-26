@@ -179,11 +179,10 @@ header li {
 /* ////////////////////////////////////////////////// FORMS ////////////////////////////////////////////////// */
 
 .hidden-form {
-    width: 18%;
+    width: 19%;
     position: absolute;
     right: 0;
     border: 2px solid #f4e4cdf4;
-    /* border-top: inherit; */
     border-right: inherit;
     border-bottom-left-radius: 40px;
     opacity: 0.5;
